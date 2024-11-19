@@ -25,7 +25,7 @@
 
     h1,
     h2,
-    h3 {
+    h3,h4,h5,h6 {
         font-family: 'Playfair Display', serif;
     }
 
@@ -349,7 +349,7 @@
 
     h3 {
         color: #262626;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 24px;
         font-weight: 700;
         margin-bottom: 4px;
@@ -400,6 +400,9 @@
         text-decoration: none;
         z-index: 0;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
 
         /* &:before {
     /* content: ""; */
@@ -454,7 +457,12 @@
             color: #ffffff;
         }
     }
-
+    .pwr {
+        padding: 19px;
+        background: #ceb4a8;
+        display: flex;
+        justify-content: center;
+    }
     @media screen and (min-width:300px)and (max-width:600px) {
         .formbox {
             left: 22%;
@@ -547,7 +555,7 @@
                     <label class="msg" for="name">Username</label>
                     <input class="box-inp" type="text" placeholder="enter your name">
                     <label class="msg" for="name">Email</label>
-                    <input class="box-inp" type="text" placeholder="enter your email">
+                    <input class="box-inp" type="email" placeholder="enter your email">
                     <label class="msg" for="password">Password</label>
                     <input class="box-inp" type="password" placeholder="************">
                     <label class="msg" for="confirm password">Confirm password </label>
@@ -670,6 +678,8 @@
                 </div>
             </div>
         </footer>
+        <hr>
+        <div class="pwr">Powered by:Munjiya zaib</div>
     </section>
 </body>
 

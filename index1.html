@@ -25,8 +25,8 @@
 
     h1,
     h2,
-    h3,h4,h5,h6 {
-        font-family: 'Playfair Display', serif;
+    h3,h4,h5,h6 {  font-family: "Host Grotesk", sans-serif;
+      /*  font-family: 'Playfair Display', serif;*/
     }
 
     .LIMITED-TIME {
@@ -64,9 +64,9 @@
     }
 
     .navup3 ul {
-        justify-content: center;
+      
         display: flex;
-        gap: 17%;
+        gap: 16px;
     }
 
     .navup3 {
@@ -260,7 +260,7 @@
         color: white;
     }
 
-    .sub-box h6 {
+    .sub-box h6 {text-align: center;
         margin: 0px;
         font-size: 20px;
         color: white;
@@ -378,7 +378,8 @@
         right: 0;
         /* background-color: #00838d; */
         /* background-color: #906d3c; */
-        background-color: #a87f46;
+        /* background-color: #a87f46; */
+        background-color:  #9b897c;
         border-radius: 0 4px 0 32px;
     }
 
@@ -426,7 +427,8 @@
             right: -16px;
             /* background: #00838d; */
             /* background: #906d3c; */
-            background: #a87f46;
+            /* background: #a87f46; */
+            background: #9b897c;
             height: 33px;
             width: 32px;
             border-radius: 15px;
@@ -462,10 +464,20 @@
         background: #ceb4a8;
         display: flex;
         justify-content: center;
+    }@media screen and (max-width:800px){
+        .navup2{
+            display:none;
+        }
     }
     @media screen and (min-width:300px)and (max-width:600px) {
         .formbox {
             left: 22%;
+        }
+        ..sub-box h6 {
+            font-size: 17px !important;
+        }
+        .sub-box h1{
+            font-size: 22px !important;
         }
 
         p {
@@ -491,39 +503,43 @@
     <div class="LIMITED-TIME">
         <p>LIMITED-TIME OFFERS:FREE DELIVERY WITH ORDER OVER $99</p>
     </div>
-    <nav class="navup">
-        <div class="navup1">
-            <div> <a href="./index.html" target="_blank"><img src="image-2/logo.webp" alt=""></a></div>
-            <!-- <div><span>
-                    <b>+1(231)2075-1732</b> <br>
-                    <p>7 days a week from 9:00 am to 7:00 pm</p>
-                </span>
-            </div> -->
-            <nav class="navup3">
-                <ul type="none">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./catlog2.html">Catalog</a></li>
-                    <li><a href="./sale3.html">Sale</a></li>
-                    <!-- <li><a href="./index1.html">Contact us</a></li> -->
-                    <Li><a href="./blog4.html">Blog</a></Li>
-                </ul>
-            </nav>
-            <!-- <div class="search-box"> -->
-            <div class="text-box">
-                <div>
-                    <input type="search" placeholder="search">
+    <nav class="nav">
+        <nav class="navup">
+            <div class="navup1">
+                <div> <a href="./index.html" target="_blank"><img src="image-2/logo.webp" alt=""></a></div>
+                <div><span class="num">
+                        <b>+1(231)2075-1732</b> <br>
+                        <p>7 days a week from 9:00 am to 7:00 pm</p>
+                    </span>
                 </div>
-                <div> <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <div class="search-box"> -->
+                <div class="text-box">
+                    
+                        <input type="search" placeholder="search">
+                    
+                    <div>
+                        <!-- <-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    </div>
                 </div>
-            </div>
-            <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
-            <div class="navup2">
-                <div><span class="wish">Wishlist <i class="fa-regular fa-heart"></i></span></div>
-                <div><span>Account <a href="./index1.html"></a></span></div>
-                <div><span>0 item(s)</span></div>
-            </div>
+                <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
+                <div class="navup2">
+                    <div><span class="wish">Wishlist <i class="fa-regular fa-heart"></i></span></div>
+                    <div><span>Account <a href="./index1.html"></a></span></div>
+                    <div><span>0 item(s)</span></div>
+                </div>
+        </nav>
+        </div>
+
+        <nav class="navup3">
+            <ul type="none">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./catlog2.html">Catalog</a></li>
+                <li><a href="./sale3.html">Sale</a></li>
+                <li><a href="./index1.html">Contact us</a></li>
+                <Li><a href="./blog4.html">Blog</a></Li>
+            </ul>
+        </nav>
     </nav>
-    </div>
 
     <!-- <nav class="navup3">
         <ul type="none">

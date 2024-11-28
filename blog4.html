@@ -25,13 +25,36 @@
     h2,
     h3 {
         /* font-family: 'Playfair Display', serif; */
-           font-family: "Host Grotesk", sans-serif;
+        font-family: "Host Grotesk", sans-serif;
     }
 
     * {
         margin: 0%;
         padding: 0%;
     }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .LIMITED-TIME {
         height: 35px;
@@ -93,7 +116,7 @@
 
     .navup3 ul {
         display: flex;
-        gap: 3%;
+        gap: 5px;
         justify-content: center;
     }
 
@@ -156,6 +179,7 @@
     }
 
     .blogbg-content-para {
+        text-align: center;
         color: white;
         font-size: 21px;
     }
@@ -200,6 +224,7 @@
 
     .footer {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 120px 27px;
         background-color: #ceb4a8;
@@ -221,7 +246,7 @@
     }
 
     .foothed li {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.6em;
     }
 
@@ -342,6 +367,7 @@
         border-style: solid;
         border-width: 2px;
     }
+
     .pwr {
         padding: 19px;
         background: #ceb4a8;
@@ -359,6 +385,18 @@
     }
 
     @media (max-width: 768px) {
+
+        .input,
+        span,
+        .navup2 {
+            display: none;
+        }
+        .container {
+    max-width: 545px;
+}
+.blogbg-content-para{
+    font-size: 18px !important;
+}
         h1 {
             font-size: 2rem;
         }
@@ -403,6 +441,13 @@
         h6 {
             font-size: 1.1rem;
         }
+        .container {
+    max-width: 385px;
+
+}.navup3 a {
+  
+    font-size: 14px;
+}
     }
 
     /* Small Mobile (320px or less) */
@@ -535,7 +580,7 @@
                     <p>7 days a week from 9:00 am to 7:00 pm</p>
                 </span>
             </div>
-            <div> <input type="search" placeholder="Search">
+            <div class="input"> <input type="search" placeholder="Search">
                 <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
             </div>
             <!-- <input type="text" <i class="fa-solid fa-magnifying-glass"></i>></label> </div> -->
@@ -544,6 +589,7 @@
                 <div><span> <a href="./index1.html">Account</a></span></div>
                 <div><span>0 item(s)</span></div>
             </div>
+
     </nav>
     </div>
     <nav class="navup3">
@@ -609,24 +655,23 @@
         <ul class="card-list" type="none">
             <li class="paper border shadow shadow-large shadow-hover">
                 <img src="image/blog1.webp" alt="">
-                <h6>Antiq Clock</h6>
-                <p>An antique clock is not just a functional timepiece; it is a statement of elegance, craftsmanship,
-                    and history. Whether it’s a grand grandfather clock or a delicate mantel clock, these vintage
-                    timepieces can elevate any room with their beauty and charm.
-                </p>
-                <p>september 10 1921</p>
+                <h6>The book </h6>
+                <p>Vintage books are more than just paper and ink—they’re pieces of history. From the printing
+                    techniques used to the types of paper and bindings, each vintage book carries a story not only from
+                    its content but also from its production. Books published in earlier centuries </p>
+                <p>March 17 1934</p>
                 <!-- <h2>
                 <a href="https://bejamas.io/blog/guide-to-remix-framework/">Remix: a practical guide</a>            
               </h2> -->
             </li>
             <li class="paper border shadow shadow-large shadow-hover">
                 <img src="image/blog2.webp" alt="">
-                <h6>Antiq Clock</h6>
-                <p>An antique clock is not just a functional timepiece; it is a statement of elegance, craftsmanship,
-                    and history. Whether it’s a grand grandfather clock or a delicate mantel clock, these vintage
-                    timepieces can elevate any room with their beauty and charm.
+                <h6>Maps and letter</h6>
+                <p>Maps are more than just navigational tools; they are windows into history, culture, and exploration.
+                    Whether you’re a seasoned cartography enthusiast or someone looking to add a unique touch to your
+                    home decor, antique maps offer an exciting glimpse into the past.
                 </p>
-                <p>september 10 1921</p>
+                <p>July 3 1891</p>
                 <!-- <h2>
                 <a href="https://bejamas.io/blog/practical-guide-to-nuxt-js/">Nuxt: a practical guide</a>            
               </h2> -->

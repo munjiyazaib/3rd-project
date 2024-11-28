@@ -90,12 +90,22 @@
         color: white;
         font-size: 50px;
     }
-}
+    .backimg-content h1{
+        font-size: 57px;}
+    }
 
 @media screen and (min-width: 300px) and (max-width:600px) {
     .sct2image {
         flex-direction: column;
+    }.sub-box p{
+        font-size: 18px;
     }
+    .num,.text-box,.navup2P{
+        display:none;
+    }
+.sub-box h1{
+    font-size: 20px;
+}
 
     .flip-body {
         gap: 82px;
@@ -147,7 +157,10 @@
     }
 
     .backimg-content h1 {
-        font-size: 38px !important;
+        font-size: 28px !important;
+    }
+    .backimg-content h3{
+        font-size: 20px;
     }
 
     .offer-box img {

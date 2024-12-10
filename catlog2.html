@@ -309,6 +309,105 @@
         display: flex;
         justify-content: center;
     }
+
+
+
+
+
+
+
+
+    
+/* Navigation Styling */
+.nav-nav {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: #333; */
+  color: black;
+  position: relative;
+}
+
+/* Hide the Checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-links a.active { 
+ font-weight: bold;
+}
+
+
+/* Media Query for Screens <= 780px */
+@media (max-width: 780px) {
+  /* Show Hamburger Icon */
+  .menu-icon {
+    display: flex;
+  }
+  .nav-links a {
+    color: white;
+  }
+
+  /* Hide Nav Links by Default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Checkbox Hack to Show Menu */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    width:50%;
+  }
+  .nav-nav{display: flex;
+    justify-content: space-between;
+  }
+}
+
+
    
     @media screen and  (max-width:600px){
     .index-bg-image{display: none;}
@@ -344,15 +443,26 @@
             </div>
     </nav>
     </div>
-    <nav class="navup3">
-        <ul type="none">
-            <li><a href="./index.html">Home</a></li>
-            </li><a href="./catlog2.html">Catalog</a></li>
-            <li><a href="./sale3.html">Sale</a></li>
-            <li><a href="./index1.html">Contact us</a></li>
-            <Li><a href="./blog4.html">Blog</a></Li>
+    <!-- Navigation -->
+    <nav class="nav-nav">
+        <!-- Checkbox for Toggle -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+    
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="/catlog2.html" class="active">Catlog</a></li>
+          <li><a href="/sale3.html" class="active">Sale</a></li>
+          <li><a href="/index1.html" class="active">Contact</a></li>
+          <li><a href="/blog4.html" class="active">Blog</a></li>
         </ul>
-    </nav>
+      </nav>
+    
     <section>
         <div class="index-bg-image">
             <!-- <div class="index-bg-content">

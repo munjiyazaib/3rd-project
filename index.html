@@ -247,6 +247,7 @@
         display: flex;
         justify-content: center;
     }
+
     .sale-1 {
         font-size: 30px;
         padding: 5%;
@@ -256,12 +257,12 @@
 
     .scthed1 {
         text-align: center;
-        font-size: 42px !important;
+        font-size: 42px ;
     }
 
     .sctpar1 {
         text-align: center;
-        font-size: 19px !important;
+        font-size: 19px ;
     }
 
     .sctcontant {
@@ -334,7 +335,7 @@
     .container2 {
         width: 88%;
         justify-content: center;
-        margin:auto;
+        margin: auto;
         /* padding: 2% 6%; */
         display: flex;
         flex-wrap: wrap;
@@ -367,7 +368,8 @@
         font-size: 70px;
     }
 
-    .backimg-content h3 {text-align: center;
+    .backimg-content h3 {
+        text-align: center;
         color: white;
         font-size: 25px;
     }
@@ -383,6 +385,9 @@
         padding: 64px 45px;
         gap: 2%;
     } */
+    .blog-overall img {
+    height: 240px;
+}
 
 
     .container6 {
@@ -394,7 +399,7 @@
     }
 
     .hover-content p {
-        padding:12px;
+        padding: 12px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -451,7 +456,8 @@
         margin: 58px 0px;
     }
 
-    .sub-box h1 { text-align: center;
+    .sub-box h1 {
+        text-align: center;
         font-size: 40px;
         color: white;
     }
@@ -463,10 +469,10 @@
     }
 
 
-span h6 {
-    line-height: 2.3em;
-    font-size: 24px;
-}
+    span h6 {
+        line-height: 2.3em;
+        font-size: 24px;
+    }
 
     /* .blogcontent h2 {
         font-size: 40px;
@@ -479,11 +485,11 @@ span h6 {
         color: #303030;
     } */
     .blog-overall {
-    display: flex
-;
-    flex-direction: column;
-    align-items: stretch;
-}
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
 
     .footer {
         display: flex;
@@ -632,11 +638,13 @@ span h6 {
         height: 257px;
         border-radius: 8px;
     }
-    span b {
-    font-size: 22px;
-}
 
-    h4 {font-size: 21px;
+    span b {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 21px;
         margin: 10px 0;
     }
 
@@ -781,11 +789,201 @@ span h6 {
     .foothed li {
         font-size: 15px;
     }
+
     .logo-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+/* Navigation Styling */
+.nav-nav {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: #333; */
+  color: black;
+  position: relative;
 }
+
+/* Hide the Checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-links a.active { 
+ font-weight: bold;
+}
+
+
+/* Media Query for Screens <= 780px */
+@media (max-width: 780px) {
+  /* Show Hamburger Icon */
+  .menu-icon {
+    display: flex;
+  }
+  .nav-links a {
+    color: white;
+  }
+
+  /* Hide Nav Links by Default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Checkbox Hack to Show Menu */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    width:50%;
+  }
+  .nav-nav{display: flex;
+    justify-content: space-between;
+  }
+}
+
+    /* .menu-container {
+  position: relative;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 2;
+  margin: 10px;
+}
+
+.hamburger span {
+  height: 4px;
+  background: black;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background: black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+.toggle-menu:checked ~ .menu {
+  display: block;
+}
+
+        /* Media Query for devices 800px or smaller *
+        @media screen and (max-width: 800px) {
+            .hamburger {
+                display: flex;  Show hamburger on smaller screens 
+            }
+
+            .menu {
+                width: 90%;  Full-width dropdown for smaller screens */
+          
+     /*   @media (max-width: 780px) {
+  /* Show Hamburger Icon 
+  .menu-icon {
+    display: flex;
+  }
+
+  /* Hide Nav Links by Default 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Checkbox Hack to Show Menu *
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}     */
+
 </style>
 
 <body>
@@ -803,9 +1001,9 @@ span h6 {
                 </div>
                 <!-- <div class="search-box"> -->
                 <div class="text-box">
-                    
-                        <input type="search" placeholder="search">
-                    
+
+                    <input type="search" placeholder="search">
+
                     <div>
                         <!-- <-- <i class="fa-solid fa-magnifying-glass"></i> -->
                     </div>
@@ -819,16 +1017,26 @@ span h6 {
         </nav>
         </div>
 
-        <nav class="navup3">
-            <ul type="none">
-                <li><a href="./index.html">Home</a></li>
-                </li><a href="./catlog2.html">Catalog</a></li>
-                <li><a href="./sale3.html">Sale</a></li>
-                <li><a href="./index1.html">Contact us</a></li>
-                <Li><a href="./blog4.html">Blog</a></Li>
-            </ul>
-        </nav>
-    </nav>
+       <!-- Navigation -->
+  <nav class="nav-nav">
+    <!-- Checkbox for Toggle -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/catlog2.html" class="active">Catlog</a></li>
+      <li><a href="/sale3.html" class="active">Sale</a></li>
+      <li><a href="/index1.html" class="active">Contact</a></li>
+      <li><a href="/blog4.html" class="active">Blog</a></li>
+    </ul>
+  </nav>
+
     <section>
         <div class="index-bg-image">
             <div class="index-bg-content">
@@ -1027,7 +1235,7 @@ span h6 {
             <div class="img"><img src="image/centerimg2.webp" alt="">
                 <div class="sctcontant">
                     <h1 class="scthed1">Memories & treasures <br> are cherished</h1>
-                    <h6 class="sctpar1">Up to 30% Discount on Antique furniture</h6>
+                    <h6 class="sctpar1">Up to 30% Discount on Antique furniture on sale</h6>
                     <div class="btnvlt">
                         <button>shop now</button>
                     </div>
@@ -1058,13 +1266,13 @@ span h6 {
                 <div class="image-container">
                     <img src="image/bestseller1.jfif" alt="">
                     <div class="hover-content">
-                        <p>the blue ancient plate</p>
+                        <p>The blue ancient plate</p>
                     </div>
                 </div>
                 <div class="image-container">
                     <img src="image-2/ornate-sofa-art-nouveau-style.jpg" alt="">
                     <div class="hover-content">
-                        <p>blue sofa with three seater</p>
+                        <p>Blue sofa with three seater</p>
                     </div>
                 </div>
                 <div class="image-container" id="blog-chair">
@@ -1075,7 +1283,7 @@ span h6 {
                 </div>
                 <div class="image-container" id="blog-picture"><img src="image/bestseller4.webp" alt="">
                     <div class="hover-content">
-                        <p>the designer picture </p>
+                        <p>The designer picture </p>
                     </div>
                 </div>
 
@@ -1087,7 +1295,7 @@ span h6 {
                     <img src="image-2/new2ho.webp" alt="Image">
                     <div class="hover-content">
                         <!-- <h2>Hover Title</h2> -->
-                        <p>the old and antic homophone</p>
+                        <p>The old and antic homophone</p>
                     </div>
                 </div>
 
@@ -1095,61 +1303,61 @@ span h6 {
                 <div class="image-container"><img src="image/blog4.jpg" alt="">
                     <div class="hover-content">
                         <!-- <h2>Hover Title</h2> -->
-                        <p>the old book of acient period</p>
+                        <p>The old book of acient period</p>
                     </div>
                     <!-- <h5>the old book of acient period</h5> -->
                 </div>
                 <div class="image-container"><img src="image/images.jfif" alt="">
                     <div class="hover-content">
-                        <p>magnifine glass</p>
+                        <p>Magnifine glass</p>
                     </div>
                 </div>
                 <div class="image-container" id="pot">
                     <img src="image-2/port.jpg" alt="Image">
                     <div class="hover-content">
 
-                        <p>white port with flower.</p>
+                        <p>White port with flower.</p>
                     </div>
                 </div>
                 <div class="image-container" id="coin"><img src="image/coin.jpg" alt="">
                     <div class="hover-content">
-                        <p>the soft drink glass </p>
+                        <p>The soft drink glass </p>
                     </div>
                 </div>
                 <div class="image-container" id="lamp1"><img src="image/lampbest.jpg" alt="">
                     <div class="hover-content">
-                        <p>lamp </p>
+                        <p>Lamp </p>
                     </div>
                 </div>
 
                 <div class="image-container" id="bed"><img src="image/bestseller9.jfif" alt="">
                     <div class="hover-content">
-                        <p>bedroom </p>
+                        <p>Bedroom </p>
                     </div>
                 </div>
                 <div class="image-container" id="blog-glass"><img src="image/glass1.jpg" alt="">
                     <div class="hover-content">
-                        <p>the soft drink glass </p>
+                        <p>The soft drink glass </p>
                     </div>
                 </div>
                 <div class="image-container" id="blog6"><img src="image/blog6.jpg" alt="">
                     <div class="hover-content">
-                        <p>the Ink set </p>
+                        <p>The Ink set </p>
                     </div>
                 </div>
                 <div class="image-container" id="catclock"> <img src="image/catclock4.jfif" alt="">
                     <div class="hover-content">
-                        <p>the clock </p>
+                        <p>The clock </p>
                     </div>
                 </div>
                 <div class="image-container" id="blog7"><img src="image/blog7.jpg" alt="">
                     <div class="hover-content">
-                        <p>the antique </p>
+                        <p>The antique </p>
                     </div>
                 </div>
                 <div class="image-container" id="candle"><img src="image/candlewhite.jpeg" alt="">
                     <div class="hover-content">
-                        <p>the white candle </p>
+                        <p>The white candle </p>
                     </div>
                 </div>
                 <div class="image-container" id="frame"><img src="image/frames2.jpg" alt="">

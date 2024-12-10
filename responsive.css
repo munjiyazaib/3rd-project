@@ -1,3 +1,9 @@
+@media screen and (max-width:1940px){
+    .blog-overall img {
+        height: 300px;
+    } 
+
+}
 @media screen  and (max-width:1784px){
     #candle,#frame,#jug{
         display: none;
@@ -88,11 +94,26 @@
 
     .backimg-content h1 {
         color: white;
-        font-size: 50px;
+        font-size: 39px !important;
     }
-    .backimg-content h1{
-        font-size: 57px;}
+   
+  
+    .indexbg-content-para {
+      font-size: 20px !important;
     }
+
+    .indexbg-content-head {
+        font-size: 33px !important;
+      
+    }
+    .sub-box h1 {
+        font-size: 34px !important;}
+        .container7 {
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+        }
+}
 
 @media screen and (min-width: 300px) and (max-width:600px) {
     .sct2image {

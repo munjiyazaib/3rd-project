@@ -422,9 +422,16 @@
   font-size: 18px;
   transition: color 0.3s;
 }
-.nav-links a.active { 
+.nav-links .active a { 
+    color:#2e2a27;
  font-weight: bold;
 }
+/* a.active {
+            color: white;
+            background-color: darkblue;
+            font-weight: bold;
+            border-radius: 5px;
+        } */
 
 
 /* Media Query for Screens <= 780px */
@@ -472,6 +479,12 @@
             max-width: 1200px;
         }
 
+    }
+    @media screen and (max-width:900px){
+        .container {
+            width: 90%;}
+            .card-list {
+                width: 90% !important;}
     }
 
     @media (max-width: 768px) {
@@ -694,11 +707,11 @@
 
     <!-- Navigation Links -->
     <ul class="nav-links">
-      <li><a href="/index.html" class="active">Home</a></li>
-      <li><a href="/catlog2.html" class="active">Catlog</a></li>
-      <li><a href="/sale3.html" class="active">Sale</a></li>
-      <li><a href="/index1.html" class="active">Contact</a></li>
-      <li><a href="/blog4.html" class="active">Blog</a></li>
+      <li class="active"><a href="/index.html" >Home</a></li>
+      <li class="active"><a href="/catlog2.html" >Catlog</a></li>
+      <li class="active"><a href="/sale3.html" >Sale</a></li>
+      <li class="active"><a href="/index1.html" >Contact</a></li>
+      <li class="active"><a href="/blog4.html" >Blog</a></li>
     </ul>
   </nav>
 

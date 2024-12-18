@@ -368,6 +368,12 @@
 .nav-links .active { 
  font-weight: bold;
 }
+.active-active a{
+    background-color: black;
+    padding: 10px;
+    color: white;
+
+}
 
 
 /* Media Query for Screens <= 780px */
@@ -401,10 +407,12 @@
   #menu-toggle:checked ~ .nav-links {
     display: flex;
     width:50%;
+    z-index:1;
   }
   .nav-nav{display: flex;
     justify-content: space-between;
   }
+ 
 }
 
 
@@ -412,6 +420,9 @@
     @media screen and  (max-width:600px){
     .index-bg-image{display: none;}
     .navup2{display: none;}
+    .LIMITED-TIME p {
+    font-size: 13px !important;
+}
     }
     @media screen and  (max-width:337px)
   {.image-container img {
@@ -456,7 +467,7 @@
         <!-- Navigation Links -->
         <ul class="nav-links">
             <li class="active"><a href="/index.html" >Home</a></li>
-            <li class="active"><a href="/catlog2.html" >Catlog</a></li>
+            <li class="active-active"><a href="/catlog2.html" >Catlog</a></li>
             <li class="active"><a href="/sale3.html" >Sale</a></li>
             <li class="active"><a href="/index1.html" >Contact</a></li>
             <li class="active"><a href="/blog4.html" >Blog</a></li>

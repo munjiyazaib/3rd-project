@@ -25,8 +25,12 @@
 
     h1,
     h2,
-    h3,h4,h5,h6 {  font-family: "Host Grotesk", sans-serif;
-      /*  font-family: 'Playfair Display', serif;*/
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Host Grotesk", sans-serif;
+        /*  font-family: 'Playfair Display', serif;*/
     }
 
     .LIMITED-TIME {
@@ -64,7 +68,7 @@
     }
 
     .navup3 ul {
-      
+
         display: flex;
         gap: 16px;
     }
@@ -197,6 +201,7 @@
 
 
     .diff {
+        padding: 15px 0px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -260,7 +265,8 @@
         color: white;
     }
 
-    .sub-box h6 {text-align: center;
+    .sub-box h6 {
+        text-align: center;
         margin: 0px;
         font-size: 20px;
         color: white;
@@ -320,103 +326,113 @@
 
 
 
-/* Navigation Styling */
-.nav-nav {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  padding: 10px 20px;
-  /* background-color: #333; */
-  color: black;
-  position: relative;
-}
+    /* Navigation Styling */
+    .nav-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        /* background-color: #333; */
+        color: black;
+        position: relative;
+    }
 
-/* Hide the Checkbox */
-#menu-toggle {
-  display: none;
-}
+    /* Hide the Checkbox */
+    #menu-toggle {
+        display: none;
+    }
 
-/* Hamburger Menu Icon */
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
+    /* Hamburger Menu Icon */
+    .menu-icon {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
 
-.bar {
-  background-color: black;
-  height: 3px;
-  width: 25px;
-  margin: 3px 0;
-  transition: all 0.3s ease;
-}
+    .bar {
+        background-color: black;
+        height: 3px;
+        width: 25px;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+    }
 
-/* Navigation Links */
-.nav-links {
-  list-style: none;
-  display: flex;
-}
+    /* Navigation Links */
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
 
-.nav-links li {
-  margin-left: 20px;
-}
+    .nav-links li {
+        margin-left: 20px;
+    }
 
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-.active-active a{
-    background-color: black;
-    padding: 10px;
-    color: white;
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
 
-}
+    .active-active a {
+        background-color: black;
+        padding: 10px;
+        color: white;
+
+    }
+
+    .nav-links .active {
+        font-weight: bold;
+    }
 
 
-/* Media Query for Screens <= 780px */
-@media (max-width: 780px){
-.container7{
-    gap:15px;
-} 
-span.num {
-    display: none;
-}
-  /* Show Hamburger Icon */
-  .menu-icon {
-    display: flex;
-  }
-  .nav-links a {
-    color: white;
-  }
+    /* Media Query for Screens <= 780px */
+    @media (max-width: 780px) {
+        .container7 {
+            gap: 15px;
+        }
 
-  /* Hide Nav Links by Default */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    background-color:#1a1919;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
+        span.num {
+            display: none;
+        }
 
-  .nav-links li {
-    margin: 10px 0;
-  }
+        /* Show Hamburger Icon */
+        .menu-icon {
+            display: flex;
+        }
 
-  /* Checkbox Hack to Show Menu */
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-    width:50%;
-  }
-  .nav-nav{display: flex;
-    justify-content: space-between;
-  }
-}
+        .nav-links a {
+            color: white;
+        }
+
+        /* Hide Nav Links by Default */
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            background-color: #1a1919;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+        /* Checkbox Hack to Show Menu */
+        #menu-toggle:checked~.nav-links {
+            display: flex;
+            width: 50%;
+        }
+
+        .nav-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
 
 
@@ -489,7 +505,7 @@ span.num {
         /* background-color: #00838d; */
         /* background-color: #906d3c; */
         /* background-color: #a87f46; */
-        background-color:  #9b897c;
+        background-color: #9b897c;
         border-radius: 0 4px 0 32px;
     }
 
@@ -569,24 +585,30 @@ span.num {
             color: #ffffff;
         }
     }
+
     .pwr {
         padding: 19px;
         background: #ceb4a8;
         display: flex;
         justify-content: center;
-    }@media screen and (max-width:800px){
-        .navup2{
-            display:none;
+    }
+
+    @media screen and (max-width:800px) {
+        .navup2 {
+            display: none;
         }
     }
+
     @media screen and (min-width:300px)and (max-width:600px) {
         .formbox {
             left: 22%;
         }
-    .sub-box h6 {
+
+        .sub-box h6 {
             font-size: 17px !important;
         }
-        .sub-box h1{
+
+        .sub-box h1 {
             font-size: 22px !important;
         }
 
@@ -624,9 +646,9 @@ span.num {
                 </div>
                 <!-- <div class="search-box"> -->
                 <div class="text-box">
-                    
-                        <input type="search" placeholder="search">
-                    
+
+                    <input type="search" placeholder="search">
+
                     <div>
                         <!-- <-- <i class="fa-solid fa-magnifying-glass"></i> -->
                     </div>
@@ -640,25 +662,25 @@ span.num {
         </nav>
         </div>
 
-         <!-- Navigation -->
-  <nav class="nav-nav">
-    <!-- Checkbox for Toggle -->
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </label>
+        <!-- Navigation -->
+        <nav class="nav-nav">
+            <!-- Checkbox for Toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
 
-    <!-- Navigation Links -->
-    <ul class="nav-links">
-      <li class="active"><a href="/index.html" >Home</a></li>
-      <li class="active"><a href="/catlog2.html" >Catlog</a></li>
-      <li class="active"><a href="/sale3.html" >Sale</a></li>
-      <li class="active-active"><a href="/index1.html" >Contact</a></li>
-      <li class="active"><a href="/blog4.html" >Blog</a></li>
-    </ul>
-  </nav>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li class="active"><a href="/catlog2.html">Catlog</a></li>
+                <li class="active"><a href="/sale3.html">Sale</a></li>
+                <li class="active-active"><a href="/index1.html">Contact</a></li>
+                <li class="active"><a href="/blog4.html">Blog</a></li>
+            </ul>
+        </nav>
 
     </nav>
 
@@ -705,9 +727,9 @@ span.num {
         </div>
 
     </section>
-     <div class="sale">
+    <div class="sale">
         <h1>What Customers Say </h1>
-    </div> 
+    </div>
 
 
     <div class="container-6">
@@ -728,7 +750,8 @@ span.num {
             <!-- <h3>Tom Sank</h3> -->
             <h3 class="small"> Sarah. | Verified Customer</h3>
             <!-- <p>⭐⭐⭐⭐⭐</p> -->
-            <p class="card-p">"This vintage clock is a beautiful piece to add to my collection. It’s rare to find something in
+            <p class="card-p">"This vintage clock is a beautiful piece to add to my collection. It’s rare to find
+                something in
                 such great condition."</p>
             <div class="go-corner" href="#">
                 <div class="go-arrow">
@@ -740,7 +763,8 @@ span.num {
             <!-- <h3>Tom Sank</h3> -->
             <h3 class="small"> Sowban. | Verified Customer</h3>
             <!-- <p>⭐⭐⭐⭐⭐</p> -->
-            <p class="card-p">"This Antiqe sofa  is a beautiful piece to add to my collection. It’s rare to find something in
+            <p class="card-p">"This Antiqe sofa is a beautiful piece to add to my collection. It’s rare to find
+                something in
                 such great condition."</p>
             <div class="go-corner" href="#">
                 <div class="go-arrow">
@@ -752,7 +776,8 @@ span.num {
             <!-- <h3>Tom Sank</h3> -->
             <h3 class="small">Elvin. | Verified Customer</h3>
             <!-- <p>⭐⭐⭐⭐⭐</p> -->
-            <p class="card-p">"This vintage pot is a beautiful piece to add to my collection. It’s rare to find something in
+            <p class="card-p">"This vintage pot is a beautiful piece to add to my collection. It’s rare to find
+                something in
                 such great condition."</p>
             <div class="go-corner" href="#">
                 <div class="go-arrow">

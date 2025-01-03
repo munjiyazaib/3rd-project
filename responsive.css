@@ -76,7 +76,7 @@
     .blog-overall img {
         height: 206px;
         width: 269px;
-    
+    }
 
     .scthed1 {
         font-size: 20px !important;
@@ -112,7 +112,8 @@
       
     }
     .sub-box h1 {
-        font-size: 34px !important;}
+        text-align: center;
+        font-size: 32px !important;}
         .container7 {
             flex-direction: column;
             align-items: center;
@@ -127,6 +128,9 @@
         i {
             font-size: 14px !important;
     }
+    .sub-box h1 {
+        text-align: center;
+        font-size: 25px !important;}
     .LIMITED-TIME p{
         font-size: 10px !important;  
     }
@@ -135,13 +139,21 @@
         .num {display:none !important; }
         .scthed1 {
     text-align: center;
-    font-size: 32px !important;
+    font-size: 24px !important;
 }
 .container7 {gap:15px;}
 
+.sctpar1{
+    font-size: 15px !important;
+}
 .text-box {
     justify-content: center;
 }
+.sale-1 h1 {
+    font-size: 22px !important;
+}
+.offer-box-content h6 {
+    font-size: 16px;}
     span b {
         font-size: 16px !important;
     }
@@ -152,11 +164,17 @@
     }.sub-box p{
         font-size: 18px !important;
     }
+   
     .num,.text-box,.navup2P{
         display:none;
     }
+    .foothed h4 {
+        font-size: 20px !important;
+    }
 .sub-box h1{
     font-size: 20px;
+}.container4 {
+    padding: 0px !important;
 }
 
     .flip-body {
@@ -209,10 +227,10 @@
     }
 
     .backimg-content h1 {
-        font-size: 23px !important;
+        font-size: 21px !important;
     }
     .backimg-content h3{
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
 
     .offer-box img {
@@ -320,8 +338,4 @@
     height: 200px;
     width: 234px;
 
-}.sub-box p{
-    font-size: 18px !important;
-}.sub-box h1 {
-    text-align: center;
-    font-size: 32px !important;}}
+}}
